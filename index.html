@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio of Abir</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #1f2933;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 80px 10%;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero h1 {
+      font-size: 42px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      opacity: 0.9;
+    }
+
+    .buttons {
+      margin-top: 25px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      border-radius: 6px;
+      margin-right: 10px;
+      display: inline-block;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      background: #3b82f6;
+      color: white;
+    }
+
+    .btn-outline {
+      border: 2px solid white;
+      color: white;
+    }
+
+    /* ---------- SECTIONS ---------- */
+    section {
+      padding: 70px 10%;
+      background: white;
+    }
+
+    h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: auto;
+      text-align: center;
+      color: #444;
+    }
+
+    /* ---------- PROJECTS ---------- */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: #f9fafb;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+    }
+
+    /* ---------- PROCESS ---------- */
+    .process {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 40px;
+      text-align: center;
+    }
+
+    .step {
+      background: #f1f5f9;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    /* ---------- CONTACT ---------- */
+    .contact {
+      background: #1e2937;
+      color: white;
+      text-align: center;
+      padding: 70px 10%;
+    }
+
+    .contact a {
+      color: #3b82f6;
+      display: inline-block;
+      margin: 5px 0;
+    }
+
+    /* ---------- FOOTER ---------- */
+    footer {
+      background: #111827;
+      color: #9ca3af;
+      text-align: center;
+      padding: 20px 10%;
+    }
+
+    /* ---------- RESPONSIVE ---------- */
+    @media(max-width:768px){
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Portfolio of ABIR HASAN</h1>
+      <p>I design clean, modern, and user-friendly websites that help ideas come to life.</p>
+      <div class="buttons">
+        <a href="#projects" class="btn btn-primary">View My Work</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <!-- Optional: add a profile image here -->
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>Hi, I’m ABIR HASAN, a web designer focused on creating clean and modern website designs.  
+    I enjoy turning ideas into simple, user-friendly layouts that look professional and work smoothly on all devices.  
+    I focus on clarity, design balance, and usability — so users feel comfortable the moment they land on a page.</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <h2>My Work</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Modern Portfolio Website</h3>
+        <p>A clean personal portfolio design focusing on layout, spacing, and readability.</p>
+      </div>
+      <div class="card">
+        <h3>Landing Page Concept</h3>
+        <p>A conversion-focused landing page built to grab attention and guide users smoothly.</p>
+      </div>
+      <div class="card">
+        <h3>Business Website UI</h3>
+        <p>A simple and professional business website layout designed for trust and clarity.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process">
+    <h2>My Process</h2>
+    <div class="process">
+      <div class="step">
+        <h3>Step 1</h3>
+        <p>Understand the goal and your requirements.</p>
+      </div>
+      <div class="step">
+        <h3>Step 2</h3>
+        <p>Create clean, modern design layouts.</p>
+      </div>
+      <div class="step">
+        <h3>Step 3</h3>
+        <p>Review & revise based on feedback.</p>
+      </div>
+      <div class="step">
+        <h3>Step 4</h3>
+        <p>Final delivery ready for use.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:astroft@gmail.com">astroft@gmail.com</a></p>
+    <p>Discord: <a href="#">abirshii_11984</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2025 ABIR HASAN. All Rights Reserved.
+  </footer>
+
+</body>
+</html>
